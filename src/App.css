@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#root {
+  height : 100vh;
+  display : flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.main {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resMain {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.box {
+  display : flex;
+  flex-direction : column;
+  border : 3px solid black;
+  width : 200px;
+  height : 200px;
+}
+.win {
+  border : 3px solid green;
+}
+.win h3 {
+  border : none;
+  color : green;
+}
+.lose {
+  border : 3px solid red;
+}
+.lose h3 {
+  border : none;
+  color : red;
+}
+.tie {
+  border : 3px solid black;
+}
+.tie h3 {
+  border : none;
+  color : black;
+}
+.box h1 {
+  margin : 0;
+}
+.box img {
+  width : 100px;
+  height : 100px;
+}
+.main div {
+  display : flex;
+  align-items : center;
+  justify-content: center;
+}
+#vs {
+  font-size : 30px;
+}
+.btnMain button{
+  font-size : 30px;
+  border : none;
+  border-radius: 25px;
+  width : 50px;
+  height : 50px;
+  margin : 10px;
+  cursor : pointer;
+  box-shadow : 1px 4px black;
+}
+.btnMain button:active {
+  box-shadow : 1px 2px black;
+  position : relative;
+  top : 2px;
 }
